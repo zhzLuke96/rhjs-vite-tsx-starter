@@ -1,11 +1,9 @@
-import { utils, rh, FC, builtin } from "@rhjs/rh";
-
-const { ref } = utils.reactivity;
+import { ref, rh, FC, builtin } from "@rhjs/rh";
 
 export const Counter: FC<{
   defaultValue?: number;
   stepValue?: number;
-}> = ({ defaultValue = 0, stepValue = 1 } = {}, ...children) => {
+}> = ({ defaultValue = 0, stepValue = 1 } = {}, state, children) => {
   const count = ref(defaultValue || 0);
   return () => (
     <button onClick={() => (count.value += stepValue)}>

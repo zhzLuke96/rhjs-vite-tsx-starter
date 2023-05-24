@@ -1,7 +1,6 @@
-import { rh, utils, builtin, cs } from "@rhjs/rh";
+import { rh, ref, builtin, onMount, onUnmount } from "@rhjs/rh";
 
 const { Style } = builtin;
-const { onMount, onUnmount } = cs;
 
 function randomColor() {
   const red = Math.floor(Math.random() * 256);
@@ -12,15 +11,15 @@ function randomColor() {
   return hex;
 }
 const crateRandomColorRef = () => {
-  const color = utils.reactivity.ref(randomColor());
-  const timerSymbol = Symbol("timer");
-  onMount((cs) => {
-    cs.__context[timerSymbol] = setInterval(() => {
+  const color = ref(randomColor());
+  let timer: any;
+  onMount(() => {
+    timer = setInterval(() => {
       color.value = randomColor();
     }, 1000);
   });
-  onUnmount((cs) => {
-    clearInterval(cs.__context[timerSymbol]);
+  onUnmount(() => {
+    clearInterval(timer);
   });
   return color;
 };

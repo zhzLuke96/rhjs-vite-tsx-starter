@@ -112,10 +112,10 @@
   resolved "https://registry.npmmirror.com/@esbuild/win32-x64/-/win32-x64-0.17.17.tgz#2b577b976e6844106715bbe0cdc57cd1528063f9"
   integrity sha512-FNZw7H3aqhF9OyRQbDDnzUApDXfC1N6fgBhkqEO2jvYCJ+DxMTfZVqg3AX0R1khg1wHTBRD5SdcibSJ+XF6bFg==
 
-"@rhjs/rh@^0.0.33":
-  version "0.0.33"
-  resolved "https://registry.yarnpkg.com/@rhjs/rh/-/rh-0.0.33.tgz#120cc2737f20f86c92a286e4f279d9e96661f8eb"
-  integrity sha512-g2k1nO0kDwAYP9UsxYjqa2+cUDNOhapOefyYnK0/cN20RcSSpUEt0emOAM0ZY3RDozO1Xrnh+hjDVDC9obgJ8g==
+"@rhjs/rh@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@rhjs/rh/-/rh-0.1.1.tgz#0596976e0b5b8c80a866fcc11e8da9b3b3f1ab5a"
+  integrity sha512-cRUGWbbvUmb4AazJBNPNDC6h4b0g8IAGipuFmy20/f3o5aONKKwI9lI8D+/mOFo+FhCC+nNi7d/0Em4V8qqb8A==
 
 esbuild@^0.17.5:
   version "0.17.17"
