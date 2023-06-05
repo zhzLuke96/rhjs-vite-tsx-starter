@@ -1,4 +1,5 @@
-import { ref, rh, FC, builtin } from "@rhjs/rh";
+import { Style } from "@rhjs/builtin";
+import { ref, rh, FC } from "@rhjs/core";
 
 export const Counter: FC<{
   defaultValue?: number;
@@ -7,7 +8,7 @@ export const Counter: FC<{
   const count = ref(defaultValue || 0);
   return () => (
     <button onClick={() => (count.value += stepValue)}>
-      <builtin.Style
+      <Style
         styleFn={() => ({
           borderRadius: "8px",
           border: "1px solid transparent",
@@ -26,7 +27,7 @@ export const Counter: FC<{
             outline: `4px auto -webkit-focus-ring-color`,
           },
         })}
-      ></builtin.Style>
+      ></Style>
       {children}
       <span>{count}</span>
     </button>

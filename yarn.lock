@@ -112,10 +112,25 @@
   resolved "https://registry.npmmirror.com/@esbuild/win32-x64/-/win32-x64-0.17.17.tgz#2b577b976e6844106715bbe0cdc57cd1528063f9"
   integrity sha512-FNZw7H3aqhF9OyRQbDDnzUApDXfC1N6fgBhkqEO2jvYCJ+DxMTfZVqg3AX0R1khg1wHTBRD5SdcibSJ+XF6bFg==
 
-"@rhjs/rh@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@rhjs/rh/-/rh-0.1.1.tgz#0596976e0b5b8c80a866fcc11e8da9b3b3f1ab5a"
-  integrity sha512-cRUGWbbvUmb4AazJBNPNDC6h4b0g8IAGipuFmy20/f3o5aONKKwI9lI8D+/mOFo+FhCC+nNi7d/0Em4V8qqb8A==
+"@rhjs/builtin@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@rhjs/builtin/-/builtin-0.1.2.tgz#56e68557066a670e62bd6fbe2d9ac0b421a8f49f"
+  integrity sha512-AxAWM9/m2PEfGxJC+Le2ZzrM3rSikMoRycYw/QxhQ6VONtjYo/TYON/Ieix++7LOceIwMdlxLhXgk3KtoKw0Bg==
+  dependencies:
+    "@rhjs/core" "^0.2.1"
+
+"@rhjs/core@^0.2.1", "@rhjs/core@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@rhjs/core/-/core-0.2.2.tgz#23b21d3c60d41b5b675adf4cdcec26ae389fab6d"
+  integrity sha512-hxj1hGq52yJeBN89/Qv4+irTvOWzIvT341V44bF7THppMfUX7cP/y9MdJCLhIdi8AeBtiSxDHLnRAnaLfyz3SQ==
+
+"@rhjs/tag@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@rhjs/tag/-/tag-0.1.4.tgz#6ef5168ae95b4f186d426bb36e782cd3817cdd11"
+  integrity sha512-nCuoprn3n7QcrPUAPZhZZ0DPbN+FKZNgyrIampJJ4kJKVHyBY/+Ar6NmLlVnOLPo5WkqcnhlWEri6bdD4JfJFA==
+  dependencies:
+    "@rhjs/builtin" "^0.1.2"
+    "@rhjs/core" "^0.2.2"
 
 esbuild@^0.17.5:
   version "0.17.17"

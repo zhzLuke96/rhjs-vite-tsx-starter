@@ -1,7 +1,8 @@
-import { builtin, rh } from "@rhjs/rh";
+import { GlobalStyle } from "@rhjs/builtin";
+import { rh } from "@rhjs/core";
 
 export const globalStyle = (
-  <builtin.GlobalStyle
+  <GlobalStyle
     styleFn={() => ({
       fontFamily: "Inter, system-ui, Avenir, Helvetica, Arial, sans-serif",
       lineHeight: "1.5",
@@ -26,5 +27,5 @@ export const globalStyle = (
         minHeight: "100vh",
       },
     })}
-  ></builtin.GlobalStyle>
+  ></GlobalStyle>
 );

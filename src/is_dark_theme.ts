@@ -1,4 +1,4 @@
-import { ref } from "@rhjs/rh";
+import { ref } from "@rhjs/core";
 
 export const is_dark_theme = () =>
   window.matchMedia &&

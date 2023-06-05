@@ -1,4 +1,5 @@
-import { builtin, rh } from "@rhjs/rh";
+import { rh } from "@rhjs/core";
+import { Style } from "@rhjs/builtin";
 import { Counter } from "./components/Counter";
 import { RandomLight } from "./components/RandomLight";
 import { globalStyle } from "./globalStyle";
@@ -8,7 +9,7 @@ export const App = () => {
   return () => (
     <div>
       {globalStyle}
-      <builtin.Style
+      <Style
         styleFn={() => ({
           position: "relative",
           display: "inline-flex",
@@ -35,7 +36,7 @@ export const App = () => {
             textDecoration: "none",
           },
         })}
-      ></builtin.Style>
+      ></Style>
       <a
         class={"logo rhjs-logo"}
         href="https://github.com/zhzLuke96/rh.js"
